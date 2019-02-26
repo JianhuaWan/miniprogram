@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-icon": "../../vant/dist/icon/index",
+    "van-row": "../../vant/dist/row/index",
+    "van-col": "../../vant/dist/col/index",
+    "van-cell": "../../vant/dist/cell/index",
+    "van-cell-group": "../../vant/dist/cell-group/index",
+    "van-tag": "../../vant/dist/tag/index",
+    "van-popup": "../../vant/dist/popup/index",
+    "van-toast": "../../vant/dist/toast/index",
+    "van-action-sheet": "../../vant/dist/action-sheet/index"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "../../vant/dist/notice-bar/index",
+    "van-button": "../../vant/dist/button/index",
+    "van-loading": "../../vant/dist/loading/index",
+    "van-search": "../../vant/dist/search/index",
+    "van-toast": "../../vant/dist/toast/index",
+    "van-dialog": "../../vant/dist/dialog/index"
+  }
+}

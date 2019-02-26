@@ -1,0 +1,13 @@
+<!--pages/main/add/index.wxml-->
+<view class="all">
+  <van-steps class="steps" steps="{{ steps }}" active="{{ active }}" />
+  <van-cell-group>
+    <van-field clearable label="任务类型" disabled placeholder="{{thingstype}}" />
+    <van-field clearable label="任务对象" disabled placeholder="{{thingstype2}}" />
+    <van-field value="{{ money }}"  disabled type="number" clearable label="预计w币" icon="question-o" placeholder="请输入支付数量" bind:click-icon="onClickIcon" />
+    <van-field value="{{ message }}" disabled label="留言" type="textarea" placeholder="请输入留言" autosize border="{{ true }}" />
+  </van-cell-group>
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+  <van-button class="submit" bindtap="submit" plain type="danger">{{workstate}}</van-button>
+</view>

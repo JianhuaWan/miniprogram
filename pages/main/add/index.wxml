@@ -1,0 +1,21 @@
+<!--pages/main/add/index.wxml-->
+<view class="all">
+  <van-notice-bar text="亲爱的{{userInfo.nickName}},您已累计发布{{worktotal}}个任务,其中等待领取:{{workwait}},处理中:{{workdoing}},已经完成:{{workdone}}" />
+  <van-steps class="steps" steps="{{ steps }}" active="{{ active }}" />
+  <van-cell-group>
+    <view bindtap='showpop'>
+      <van-field required="true" clearable label="任务类型" disabled placeholder="{{thingstype}}" />
+    </view>
+    <view bindtap='showpop2'>
+      <van-field required="true" clearable label="任务对象" disabled placeholder="{{thingstype2}}" />
+    </view>
+    <van-field required="true" bind:input="changemoney" maxlength="3" value="{{ money }}" type="number" clearable label="预计w币" icon="question-o" placeholder="请输入支付数量" bind:click-icon="onClickIcon" />
+    <van-field value="{{ message }}" label="留言" type="textarea" placeholder="请输入留言" autosize border="{{ true }}" />
+  </van-cell-group>
+  <van-action-sheet show="{{ show }}" actions="{{ actions }}" cancel-text="取消" bind:select="onSelect" bind:cancel="onClose" />
+  <van-action-sheet show="{{ show2 }}" actions="{{ actions2 }}" cancel-text="取消" bind:select="onSelect2" bind:cancel="onClose2" />
+  <van-dialog id="van-dialog" />
+  <van-button wx:if="{{!issubmit}}" class="submit" bindtap="submit" plain type="danger">提交任务</van-button>
+  <van-button wx:else disabled class="submit" type="danger">提交任务</van-button>
+  <van-toast id="van-toast" />
+</view>

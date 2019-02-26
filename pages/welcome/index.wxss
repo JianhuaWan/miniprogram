@@ -1,0 +1,42 @@
+/* pages/welcome/index.wxss */
+
+page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.warp {
+  height: max-content;
+  width: max-content;
+}
+
+.other-button-hover {
+  background-color: #999;
+  margin-right: 220rpx;
+  color: black;
+  margin-left: 220rpx;
+}
+.button-hover {
+  background-color: #f4ea2a;
+  margin-left: 220rpx;
+  color: white;
+  margin-right: 220rpx;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  margin-left: 280rpx;
+  margin-bottom: 80rpx;
+  margin-top: -100rpx;
+}
+
+/** 添加自定义button点击态样式类**/

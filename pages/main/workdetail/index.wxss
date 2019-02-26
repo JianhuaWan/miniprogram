@@ -1,0 +1,18 @@
+/* pages/main/add/index.wxss */
+.radio{
+  width: 100%;
+  position: relative;
+}
+.all{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.submit{
+  margin-top: 60%;
+  margin-left: 40%;
+  position: absolute;
+}
+.steps{
+  margin-top: 15px;
+}

@@ -1,0 +1,47 @@
+/* pages/main/addcus/index.wxss */
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #f4ea2a;
+  color: #fff;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.loading {
+  margin-left: 50%;
+  margin-top: 50%;
+  position: absolute;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.all {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

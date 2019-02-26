@@ -1,0 +1,40 @@
+<!--pages/login/index.wxml-->
+<view class="allcommon">
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      登录
+      <!-- <image src='../../images/back.png' mode='aspectFit' class='back' bindtap='navBack'></image>  -->
+    </view>
+  </view>
+  <view bindtap="actionSheetTap" class="linearsytle">
+    <!-- 正文 -->
+    <text class="textstyle">使用环境</text>
+    <cover-image class="imgstyle" src='/pages/images/icon_more.png'></cover-image>
+    <text class="text1style">{{menu}}</text>
+  </view>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <block wx:for-items="{{actionSheetItems}}" wx:key="{{txt}}">
+      <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+    </block>
+
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+
+  </action-sheet>
+  <view class="commonline"></view>
+  <view class="linearsytle1">
+    <cover-image class="imgstyle1" src='/pages/images/login_moblie_icon.png'></cover-image>
+    <input bindinput="validatephone" class="phone" type="number" maxlength="11" placeholder="手机号" auto-focus />
+  </view>
+  <view class="commonline"></view>
+  <view class="linearsytle1">
+    <cover-image class="imgstyle1" src='/pages/images/setting_reset_pw_icon.png'></cover-image>
+    <input bindinput="validatepwd" class="phone" password="true" maxlength="18" placeholder="密码" />
+    <cover-image class="imgstyle2" src='/pages/images/btn_eye_vi.png'></cover-image>
+  </view>
+  <text class="forgetpwd">忘记密码</text>
+  <!-- <button  class="{{isempty ? btn_logined:btn_login}}">登录</button> -->
+  <button   bindtap="gotomain" wx:if="{{isempty}}"  class="btn_logined">登录</button>
+  <button wx:else class="btn_login">登录</button>
+  <image class="wechat" src='/pages/images/icon_wechat.png'></image>
+  <text class="tips">一一一一一  快捷登录  一一一一一</text>
+</view>

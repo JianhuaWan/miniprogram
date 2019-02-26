@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/welcome/index",
+    "pages/main/mine/index",
+    "pages/main/add/index",
+    "pages/main/pull/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "WeClub",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/pull/index",
+        "text": "赚w币",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/homeed.png",
+        "selected": "true"
+      },
+      {
+        "pagePath": "pages/main/add/index",
+        "text": "发任务",
+        "iconPath": "pages/images/addwork.png",
+        "selectedIconPath": "pages/images/addworked.png",
+        "selected": false
+      },
+      {
+        "pagePath": "pages/main/mine/index",
+        "text": "我的",
+        "iconPath": "pages/images/mine.png",
+        "selectedIconPath": "pages/images/mineed.png",
+        "selected": false
+      }
+    ],
+    "position": "bottom"
+  }
+}

@@ -1,0 +1,20 @@
+<!--pages/main/addcus/index.wxml-->
+<view class="all">
+  <view wx:if="{{!hasUserInfo && canIUse}}" />
+  <van-notice-bar   mode="closeable" wx:else text="亲爱的{{userInfo.nickName}}，{{notice}}" />
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:search="onSearch">
+  </van-search>
+  <view class="container">
+    <view class="userinfo">
+      <button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取授权 </button>
+      <block wx:else>
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+      </block>
+    </view>
+  </view>
+  <van-loading wx:if="{{hasUserInfo && !canIUse}}" class="loading" type="spinner" color="#c9c9c9" size="30px" />
+  <van-toast id="van-toast" />
+  <map wx:if="{{hasUserInfo }}" bindmarkertap="markertap" id="myMap" class="map" longitude="{{jd}}" show-location latitude="{{wd}}" scale='14' subkey="IBPBZ-VICCX-YJU4L-ZQ5ZO-6Z442-FIBBI" markers="{{markers}}"></map>
+  <van-dialog id="van-dialog" />
+</view>

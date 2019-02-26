@@ -1,0 +1,17 @@
+<view class="container">
+  <image bindtap='changebg' class="mine_bg" src='{{bg_mine}}'></image>
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">{{nickName}}</text> -->
+    </block>
+  </view>
+  <van-tag bindtap="sign" wx:if="{{!issign}}" size="medium" class="sign" round type="danger">签到</van-tag>
+  <van-tag bindtap="signed" wx:else size="medium" class="signed" round>已签到</van-tag>
+  <van-cell class="view_1" title="发出的任务" value="0" icon="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/14/1856c2dc40aeb27180d698c050195847.png" is-link />
+  <van-cell class="view_1" title="我的w币" value="{{coins}}" icon="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/14/56986bb940323e5d807e10f12f1ee297.png" is-link />
+  <van-cell bindtap="previewImage" class="view_1" title="打赏开发者" data-src="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/18/b5d6792c404bc56580b6556d4bd2f099.jpg" icon="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/18/3a183108407f308180c9058d626f68ce.png" />
+  <!-- <van-cell bindtap="onShareAppMessage" class="view_1" title="推荐给小伙伴" icon="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/14/1767141540788bcc805eefedd6f2b771.png" /> -->
+  <!-- <image show="{{ show }}" class="img" data-src="http://bmob-cdn-16902.b0.upaiyun.com/2019/02/18/b5d6792c404bc56580b6556d4bd2f099.jpg" bindtap="previewImage"></image> -->
+  <van-toast id="van-toast" />
+</view>

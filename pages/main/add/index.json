@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "van-button": "../../vant/dist/button/index",
+    "van-dialog": "../../vant/dist/dialog/index",
+    "van-panel": "../../vant/dist/panel/index",
+    "van-field": "../../vant/dist/field/index",
+    "van-popup": "../../vant/dist/popup/index",
+    "van-action-sheet": "../../vant/dist/action-sheet/index",
+    "van-radio": "../../vant/dist/radio/index",
+    "van-radio-group": "../../vant/dist/radio-group/index",
+    "van-steps": "../../vant/dist/steps/index",
+    "van-toast": "../../vant/dist/toast/index",
+    "van-notice-bar": "../../vant/dist/notice-bar/index"
+  }
+}
